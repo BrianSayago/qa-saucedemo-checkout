@@ -4,7 +4,7 @@
 | CP    | Título | REQ    | Tipo     | Prioridad | Estado    |
 |-------|--------|--------|----------|-----------|-----------|
 | CP-01 | Login válido con standard_user | REQ-01 | Positivo | P1        | Automatizado |
-| CP-02 | locked_out_user ve error de usuario bloqueado | REQ-02 | Negativo | P1        | Pendiente |
+| CP-02 | locked_out_user ve error de usuario bloqueado | REQ-02 | Negativo | P1        | Automatizado |
 | CP-03 | Credenciales inválidas muestran error | REQ-03 | Negativo | P1        | Pendiente |
 | CP-04 | Agregar 2 productos, el contador del carrito marca 2 | REQ-04 | Positivo | P2        | Pendiente |
 | CP-05 | El carrito muestra los ítems | REQ-05 | Positivo | P2        | Pendiente |
@@ -43,9 +43,9 @@
   2. Ingresar usuario locked_out_user
   3. Ingresar contraseña correcta
   4. Hacer clic en el botón de login
-- Resultado esperado: Mensaje de error indicando usuario bloqueado [por confirmar en la web]
-- Estado: Pendiente
-- Test: 
+- Resultado esperado: Mensaje de error indicando usuario bloqueado: "Epic sadface: Sorry, this user has been locked out."
+- Estado: Automatizado
+- Test: tests/login.spec.ts::CP-02 locked_out_user ve error de usuario bloqueado 
 
 ### CP-03 — Credenciales inválidas muestran error
 - Requisito: REQ-03

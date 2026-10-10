@@ -3,7 +3,7 @@
 Criterio común de "Hecho cuando" (aplica a T1–T9): test escrito con el ID del CP en el nombre; pasa o queda como fallo conocido con BUG-NNN; suite estable en 3 pasadas; Estado y Test actualizados en test-cases.md; tarea marcada como hecha. CP-01 ya está automatizado y no se toca.
 
 ## T1 — Login con locked_out_user
-- [ ] Hecha
+- [x] Hecha
 - CP: CP-02
 - REQ: REQ-02
 - Archivo: tests/login.spec.ts
