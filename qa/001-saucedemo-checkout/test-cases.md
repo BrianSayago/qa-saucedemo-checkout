@@ -5,7 +5,7 @@
 |-------|--------|--------|----------|-----------|-----------|
 | CP-01 | Login válido con standard_user | REQ-01 | Positivo | P1        | Automatizado |
 | CP-02 | locked_out_user ve error de usuario bloqueado | REQ-02 | Negativo | P1        | Automatizado |
-| CP-03 | Credenciales inválidas muestran error | REQ-03 | Negativo | P1        | Pendiente |
+| CP-03 | Credenciales inválidas muestran error | REQ-03 | Negativo | P1        | Automatizado |
 | CP-04 | Agregar 2 productos, el contador del carrito marca 2 | REQ-04 | Positivo | P2        | Pendiente |
 | CP-05 | El carrito muestra los ítems | REQ-05 | Positivo | P2        | Pendiente |
 | CP-06 | Permite quitar 1 producto del carrito | REQ-05 | Positivo | P2        | Pendiente |
@@ -55,11 +55,11 @@
 - Datos: usuario usuario_inexistente, contraseña incorrecta
 - Pasos:
   1. Ir a la página de login
-  2. Ingresar usuario usuario_inexistente y una contraseña incorrecta.
+  2. Ingresar usuario usuario_inexistente y una contraseña incorrecta
   3. Hacer clic en el botón de login
-- Resultado esperado: Mensaje de error indicando credenciales inválidas [por confirmar en la web]
-- Estado: Pendiente
-- Test: 
+- Resultado esperado: Mensaje de error indicando credenciales inválidas: "Epic sadface: Username and password do not match any user in this service"
+- Estado: Automatizado
+- Test: tests/login.spec.ts::CP-03 Credenciales inválidas muestran error
 
 ### CP-04 — Agregar 2 productos, el contador del carrito marca 2
 - Requisito: REQ-04

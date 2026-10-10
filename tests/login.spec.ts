@@ -23,4 +23,16 @@ test.describe('Login', () => {
     await expect(error).toBeVisible();
     await expect(error).toHaveText('Epic sadface: Sorry, this user has been locked out.');
   });
+
+  test('CP-03 Credenciales inválidas muestran error', async ({ page }) => {
+    await page.goto('/');
+    await page.locator('[data-test="username"]').fill('usuario_inexistente');
+    await page.locator('[data-test="password"]').fill('contraseña_invalida');
+    await page.locator('[data-test="login-button"]').click();
+
+    const error = page.locator('[data-test="error"]');
+    await expect(error).toBeVisible();
+    // El mensaje cambia ligeramente dependiendo de las condiciones, pero siempre contiene esta parte
+    await expect(error).toHaveText('Epic sadface: Username and password do not match any user in this service');
+  });
 });

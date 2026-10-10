@@ -10,7 +10,7 @@ Criterio común de "Hecho cuando" (aplica a T1–T9): test escrito con el ID del
 - Hecho cuando: verifica que se muestra el error de usuario bloqueado y reemplaza "[por confirmar en la web]" en CP-02 por el texto real; criterio común.
 
 ## T2 — Login con credenciales inválidas
-- [ ] Hecha
+- [x] Hecha
 - CP: CP-03
 - REQ: REQ-03
 - Archivo: tests/login.spec.ts
