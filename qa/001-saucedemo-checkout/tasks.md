@@ -59,7 +59,7 @@ Criterio común de "Hecho cuando" (aplica a T1–T9): test escrito con el ID del
 - Hecho cuando: tras elegir "Price (low to high)", cada precio es menor o igual al siguiente; criterio común.
 
 ## T9 — Viewport móvil en el login
-- [ ] Hecha
+- [x] Hecha
 - CP: CP-10
 - REQ: REQ-09
 - Archivo: tests/login.spec.ts

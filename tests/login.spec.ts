@@ -35,4 +35,28 @@ test.describe('Login', () => {
     // El mensaje cambia ligeramente dependiendo de las condiciones, pero siempre contiene esta parte
     await expect(error).toHaveText('Epic sadface: Username and password do not match any user in this service');
   });
+
+  test.describe('CP-10 Viewport móvil 375x667 en el login', () => {
+    test.use({ viewport: { width: 375, height: 667 } });
+    
+    test('Verifica que usuario, contraseña y botón Login sean visibles sin scroll horizontal', async ({ page }) => {
+      await page.goto('/');
+      
+      // Verificar que los elementos sean visibles
+      const usernameInput = page.locator('[data-test="username"]');
+      const passwordInput = page.locator('[data-test="password"]');
+      const loginButton = page.locator('[data-test="login-button"]');
+      
+      await expect(usernameInput).toBeVisible();
+      await expect(passwordInput).toBeVisible();
+      await expect(loginButton).toBeVisible();
+      
+      // Verificar que no haya scroll horizontal
+      const isHorizontalScroll = await page.evaluate(() => {
+        return document.documentElement.scrollWidth > document.documentElement.clientWidth;
+      });
+      
+      expect(isHorizontalScroll).toBe(false);
+    });
+  });
 });

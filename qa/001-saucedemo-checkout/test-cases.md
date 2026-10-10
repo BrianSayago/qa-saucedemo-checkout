@@ -12,7 +12,7 @@
 | CP-07 | Checkout feliz hasta "Thank you for your order!" | REQ-06 | Positivo | Alta        | Automatizado |
 | CP-08 | Checkout con campos obligatorios vacíos muestra error | REQ-07 | Negativo | P1        | Automatizado |
 | CP-09 | Ordenar por precio de menor a mayor | REQ-08 | Positivo | P3        | Automatizado |
-| CP-10 | Viewport móvil 375x667 en el login | REQ-09 | Límite | Alta        | Pendiente |
+| CP-10 | Viewport móvil 375x667 en el login | REQ-09 | Límite | Alta        | Automatizado |
 
 ## Detalle
 
@@ -173,8 +173,8 @@
   2. Ir a la página de login
   3. Verificar que usuario, contraseña y botón Login sean visibles sin scroll horizontal
 - Resultado esperado: Usuario, contraseña y botón Login visibles sin scroll horizontal
-- Estado: Pendiente
-- Test:
+- Estado: Automatizado
+- Test: tests/login.spec.ts::CP-10 Viewport móvil 375x667 en el login
 
 ## Matriz de trazabilidad
 | REQ    | CP                | Cobertura                    |
