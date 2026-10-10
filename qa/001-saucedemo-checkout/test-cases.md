@@ -8,7 +8,7 @@
 | CP-03 | Credenciales inválidas muestran error | REQ-03 | Negativo | P1        | Automatizado |
 | CP-04 | Agregar 2 productos, el contador del carrito marca 2 | REQ-04 | Positivo | P2        | Automatizado |
 | CP-05 | El carrito muestra los ítems | REQ-05 | Positivo | P2        | Automatizado |
-| CP-06 | Permite quitar 1 producto del carrito | REQ-05 | Positivo | P2        | Pendiente |
+| CP-06 | Permite quitar 1 producto del carrito | REQ-05 | Positivo | P2        | Automatizado |
 | CP-07 | Checkout feliz hasta "Thank you for your order!" | REQ-06 | Positivo | Alta        | Pendiente |
 | CP-08 | Checkout con campos obligatorios vacíos muestra error | REQ-07 | Negativo | P1        | Pendiente |
 | CP-09 | Ordenar por precio de menor a mayor | REQ-08 | Positivo | P3        | Pendiente |
@@ -108,8 +108,8 @@
   6. Quitar Sauce Labs Bike Light del carrito
   7. Verificar contador del carrito y contenido
 - Resultado esperado: El carrito solo contiene Sauce Labs Backpack y el contador marca 1
-- Estado: Pendiente
-- Test: 
+- Estado: Automatizado
+- Test: tests/cart.spec.ts::CP-06 Quitar un producto del carrito
 
 ### CP-07 — Checkout feliz hasta "Thank you for your order!"
 - Requisito: REQ-06

@@ -31,7 +31,7 @@ Criterio común de "Hecho cuando" (aplica a T1–T9): test escrito con el ID del
 - Hecho cuando: el carrito muestra Backpack y Bike Light; criterio común.
 
 ## T5 — Quitar un producto del carrito
-- [ ] Hecha
+- [x] Hecha
 - CP: CP-06
 - REQ: REQ-05
 - Archivo: tests/cart.spec.ts
