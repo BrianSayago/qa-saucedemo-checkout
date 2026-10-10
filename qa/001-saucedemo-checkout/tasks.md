@@ -17,7 +17,7 @@ Criterio común de "Hecho cuando" (aplica a T1–T9): test escrito con el ID del
 - Hecho cuando: usuario inexistente con cualquier contraseña muestra error; reemplaza "[por confirmar en la web]" en CP-03 por el texto real; criterio común.
 
 ## T3 — Agregar 2 productos y verificar contador
-- [ ] Hecha
+- [x] Hecha
 - CP: CP-04
 - REQ: REQ-04
 - Archivo: tests/cart.spec.ts
