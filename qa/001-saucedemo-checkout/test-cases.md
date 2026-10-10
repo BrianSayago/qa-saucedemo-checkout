@@ -90,8 +90,8 @@
   4. Ir al carrito
   5. Verificar que se muestren los ítems agregados
 - Resultado esperado: Los ítems agregados se muestran en el carrito
-- Estado: Pendiente
-- Test: 
+- Estado: Automatizado
+- Test: tests/cart.spec.ts::CP-05 El carrito muestra los ítems
 
 ### CP-06 — Permite quitar 1 producto del carrito
 - Requisito: REQ-05
