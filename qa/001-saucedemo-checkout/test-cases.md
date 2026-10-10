@@ -11,7 +11,7 @@
 | CP-06 | Permite quitar 1 producto del carrito | REQ-05 | Positivo | P2        | Automatizado |
 | CP-07 | Checkout feliz hasta "Thank you for your order!" | REQ-06 | Positivo | Alta        | Automatizado |
 | CP-08 | Checkout con campos obligatorios vacíos muestra error | REQ-07 | Negativo | P1        | Automatizado |
-| CP-09 | Ordenar por precio de menor a mayor | REQ-08 | Positivo | P3        | Pendiente |
+| CP-09 | Ordenar por precio de menor a mayor | REQ-08 | Positivo | P3        | Automatizado |
 | CP-10 | Viewport móvil 375x667 en el login | REQ-09 | Límite | Alta        | Pendiente |
 
 ## Detalle
@@ -159,8 +159,8 @@
   3. Seleccionar opción "Price (low to high)" de ordenamiento
   4. Verificar que los precios estén en orden ascendente
 - Resultado esperado: Los productos se muestran en orden ascendente por precio (cada precio es menor o igual al siguiente)
-- Estado: Pendiente
-- Test: 
+- Estado: Automatizado
+- Test: tests/sorting.spec.ts::CP-09 Ordenar por precio de menor a mayor
 
 ### CP-10 — Viewport móvil 375x667 en el login
 - Requisito: REQ-09

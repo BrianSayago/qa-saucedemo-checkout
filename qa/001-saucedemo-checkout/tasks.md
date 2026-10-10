@@ -52,7 +52,7 @@ Criterio común de "Hecho cuando" (aplica a T1–T9): test escrito con el ID del
 - Hecho cuando: con los tres campos vacíos se muestra un error; reemplaza "[por confirmar en la web]" en CP-08 por el texto real; criterio común.
 
 ## T8 — Ordenar por precio de menor a mayor
-- [ ] Hecha
+- [x] Hecha
 - CP: CP-09
 - REQ: REQ-08
 - Archivo: tests/sorting.spec.ts
