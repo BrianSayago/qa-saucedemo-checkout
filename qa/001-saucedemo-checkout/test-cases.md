@@ -10,7 +10,7 @@
 | CP-05 | El carrito muestra los ítems | REQ-05 | Positivo | P2        | Automatizado |
 | CP-06 | Permite quitar 1 producto del carrito | REQ-05 | Positivo | P2        | Automatizado |
 | CP-07 | Checkout feliz hasta "Thank you for your order!" | REQ-06 | Positivo | Alta        | Automatizado |
-| CP-08 | Checkout con campos obligatorios vacíos muestra error | REQ-07 | Negativo | P1        | Pendiente |
+| CP-08 | Checkout con campos obligatorios vacíos muestra error | REQ-07 | Negativo | P1        | Automatizado |
 | CP-09 | Ordenar por precio de menor a mayor | REQ-08 | Positivo | P3        | Pendiente |
 | CP-10 | Viewport móvil 375x667 en el login | REQ-09 | Límite | Alta        | Pendiente |
 
@@ -143,9 +143,9 @@
   5. Iniciar checkout
   6. Dejar los tres campos obligatorios vacíos
   7. Intentar completar el checkout
-- Resultado esperado: Mensaje de error indicando campos obligatorios [por confirmar en la web]
-- Estado: Pendiente
-- Test: 
+- Resultado esperado: Mensaje de error indicando campos obligatorios "Error: First Name is required"
+- Estado: Automatizado
+- Test: tests/checkout.spec.ts::CP-08 Checkout con campos obligatorios vacíos muestra error
 
 ### CP-09 — Ordenar por precio de menor a mayor
 - Requisito: REQ-08

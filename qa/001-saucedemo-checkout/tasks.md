@@ -45,7 +45,7 @@ Criterio común de "Hecho cuando" (aplica a T1–T9): test escrito con el ID del
 - Hecho cuando: con Backpack y Bike Light y los datos John / Doe / 12345, se llega a "Thank you for your order!"; criterio común.
 
 ## T7 — Checkout con campos obligatorios vacíos
-- [ ] Hecha
+- [x] Hecha
 - CP: CP-08
 - REQ: REQ-07
 - Archivo: tests/checkout.spec.ts
