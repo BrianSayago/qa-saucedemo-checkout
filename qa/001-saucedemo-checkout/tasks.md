@@ -38,7 +38,7 @@ Criterio común de "Hecho cuando" (aplica a T1–T9): test escrito con el ID del
 - Hecho cuando: tras quitar Bike Light, el carrito contiene solo Backpack y el contador marca 1; criterio común.
 
 ## T6 — Checkout feliz
-- [ ] Hecha
+- [x] Hecha
 - CP: CP-07
 - REQ: REQ-06
 - Archivo: tests/checkout.spec.ts

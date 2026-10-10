@@ -9,7 +9,7 @@
 | CP-04 | Agregar 2 productos, el contador del carrito marca 2 | REQ-04 | Positivo | P2        | Automatizado |
 | CP-05 | El carrito muestra los ítems | REQ-05 | Positivo | P2        | Automatizado |
 | CP-06 | Permite quitar 1 producto del carrito | REQ-05 | Positivo | P2        | Automatizado |
-| CP-07 | Checkout feliz hasta "Thank you for your order!" | REQ-06 | Positivo | Alta        | Pendiente |
+| CP-07 | Checkout feliz hasta "Thank you for your order!" | REQ-06 | Positivo | Alta        | Automatizado |
 | CP-08 | Checkout con campos obligatorios vacíos muestra error | REQ-07 | Negativo | P1        | Pendiente |
 | CP-09 | Ordenar por precio de menor a mayor | REQ-08 | Positivo | P3        | Pendiente |
 | CP-10 | Viewport móvil 375x667 en el login | REQ-09 | Límite | Alta        | Pendiente |
@@ -126,8 +126,8 @@
   6. Completar datos de checkout
   7. Confirmar orden
 - Resultado esperado: Mensaje "Thank you for your order!"
-- Estado: Pendiente
-- Test: 
+- Estado: Automatizado
+- Test: tests/checkout.spec.ts::CP-07 Checkout feliz hasta "Thank you for your order!" 
 
 ### CP-08 — Checkout con campos obligatorios vacíos muestra error
 - Requisito: REQ-07
