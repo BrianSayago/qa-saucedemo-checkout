@@ -1,5 +1,7 @@
 # QA Sauce Demo: flujo de compra
 
+![Playwright Tests](https://github.com/BrianSayago/qa-saucedemo-checkout/actions/workflows/playwright.yml/badge.svg)
+
 Caso de QA de punta a punta sobre [Sauce Demo](https://www.saucedemo.com), un e-commerce público de demostración: contexto, estrategia, plan de pruebas, casos, automatización con Playwright (TypeScript) e informe de cierre.
 
 **Resultado:** veredicto **GO**. 10 casos de prueba automatizados, 30 ejecuciones pasadas (`--repeat-each=3`) y ningún defecto S1/S2 abierto.
