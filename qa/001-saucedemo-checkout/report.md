@@ -44,4 +44,4 @@ No se encontraron defectos
 La demo ya expone atributos data-test, no se sugieren cambios.
 
 ## Próximos pasos
-Ampliar a otros usuarios y navegadores y agregar la ejecución en CI.
+Ampliar a otros usuarios y navegadores.
